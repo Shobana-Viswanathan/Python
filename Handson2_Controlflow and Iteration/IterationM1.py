@@ -1,9 +1,11 @@
 n = int(input(" "))
 i = 0
-for i in range(1, i<=n, 2):
+odd = 0 
+even= 0
+for i in range(1,n+1):
     if i%2==0:
-      odd+=i
+       even+=i
     else:
-       even+=i-1
+        odd+=i
 print(even)
 print(odd)
