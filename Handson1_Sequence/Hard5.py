@@ -1,15 +1,18 @@
 total = 0
+count = 1
 
 while True:
 
-    price = int(input("Enter the price of the item: "))
-    quantity = int(input("Enter the quantity of the item: "))
+    price = float(input(f"Enter the price of the {count} item: "))
+    quantity = int(input(f"Enter the quantity of the {count} item: "))
 
     total = total + (price * quantity)
 
-    choice = input("Do you want to enter another item?(yes/no) ")
+    choice = input("Do you want to enter another item? (yes/no): ")
 
     if choice.lower() == "no":
         break
 
-print("Total Cost:", total)
+    count += 1
+
+print("Total Price:", int(total))
