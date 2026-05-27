@@ -15,4 +15,8 @@ while True:
 
     count += 1
 
+<<<<<<< HEAD
 print("Total Price:", int(total))
+=======
+print("Total Price:", int(total))
+>>>>>>> da7e9444e6ce8e8d4a0ad2241b51c1bd32d65326
