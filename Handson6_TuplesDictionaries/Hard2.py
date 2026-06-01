@@ -1,13 +1,18 @@
-k=2
+k = int(input("Enter k: "))
+n = int(input("Enter number of tuples: "))
 
-lst=[(2,3),(3,3),(1,4),(2,4),(2,5),(3,4),(1,4),(3,4),(4,7)]
+lst = []
 
-d={}
-res=[]
+for i in range(n):
+    a, b = map(int, input().split())
+    lst.append((a, b))
+
+d = {}
+res = []
 
 for i in lst:
-    if d.get(i[0],0)<k:
+    if d.get(i[0], 0) < k:
         res.append(i)
-        d[i[0]]=d.get(i[0],0)+1
+        d[i[0]] = d.get(i[0], 0) + 1
 
 print(res)

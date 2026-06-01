@@ -1,11 +1,23 @@
-d1={'Gfg':20,'is':36,'best':100}
-d2={'Gfg2':26,'is2':19,'best2':70}
+d1 = {}
+d2 = {}
 
-v=list(d2.values())
+n = int(input("Enter size: "))
 
-res={}
+for i in range(n):
+    k = input("Key d1: ")
+    v = int(input("Value d1: "))
+    d1[k] = v
 
-for i,j in enumerate(d1.keys()):
-    res[j]=v[i]
+for i in range(n):
+    k = input("Key d2: ")
+    v = int(input("Value d2: "))
+    d2[k] = v
+
+v = list(d2.values())
+
+res = {}
+
+for i, j in enumerate(d1.keys()):
+    res[j] = v[i]
 
 print(res)

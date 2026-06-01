@@ -1,3 +1,4 @@
-t1=(30,9,7)
-t2=(4,6)
-print(t1+t2)
+t1 = tuple(map(int, input("Enter t1 elements: ").split()))
+t2 = tuple(map(int, input("Enter t2 elements: ").split()))
+
+print(t1 + t2)

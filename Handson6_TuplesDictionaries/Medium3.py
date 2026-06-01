@@ -1,10 +1,15 @@
-test_list=[(4,5),(4,),(8,6,7),(1,),(3,4,6,7)]
-k=3
+k = int(input("Enter k: "))
+n = int(input("Enter number of tuples: "))
 
-res=[]
+test_list = []
+
+for i in range(n):
+    test_list.append(tuple(map(int, input().split())))
+
+res = []
 
 for i in test_list:
-    if len(i)!=k:
+    if len(i) != k:
         res.append(i)
 
 print(res)

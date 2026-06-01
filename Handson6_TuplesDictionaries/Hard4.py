@@ -1,14 +1,14 @@
-k=3
-s="paradox"
+k = int(input("Enter k: "))
+s = input("Enter string: ")
 
-d={}
+d = {}
 
 for i in range(26):
-    d[chr(97+i)]=chr(122-i)
+    d[chr(97+i)] = chr(122-i)
 
-ans=s[:k-1]
+ans = s[:k-1]
 
 for i in s[k-1:]:
-    ans+=d[i]
+    ans += d[i]
 
 print(ans)

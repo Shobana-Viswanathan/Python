@@ -1,6 +1,6 @@
-words=["go","bat","me","eat","goal","boy","run"]
-chars={'e','o','b','a','m','g','l'}
+words = input("Enter words: ").split()
+chars = set(input("Enter characters: ").split())
 
 for i in words:
-    if set(i)<=chars:
-        print(i,end=" ")
+    if set(i) <= chars:
+        print(i, end=" ")
