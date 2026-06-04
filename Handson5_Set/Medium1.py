@@ -1,5 +1,5 @@
 def count_unique_element(input_list):    
-    unique=set(input_list)
+    unique=input_list
     output=len(unique)
     print(output)
 
