@@ -1,0 +1,4 @@
+for i in 'smart clif': 
+    if i=='r' :
+        pass
+    print(i,end=",")

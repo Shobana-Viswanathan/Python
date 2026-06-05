@@ -1,0 +1,9 @@
+d={1:'one',2:'two',3:'three',4:'four'}
+print(d.pop(1))
+print(d.popitem())
+print(d)
+#update
+d1={1:'one',2:'three'}
+d2={2:'two'}
+d1.update(d2)
+print(d1)

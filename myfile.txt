@@ -1,0 +1,4 @@
+Hey I have started using files in python
+50Hello Everyone
+Writing multiline strings
+This is the #third line
